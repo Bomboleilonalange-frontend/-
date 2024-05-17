@@ -1,0 +1,1001 @@
+@font-face {
+    font-family: "Open Sans";
+    src: url(../fonts/Open_Sans/static/OpenSans-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat/static/Montserrat-Regular.ttf);
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* background: rgb(255 231 191 / 28%); */
+/* background: rgb(255 231 191 / 59%); */
+
+body {
+    background: rgb(255 231 191 / 28%);
+    color: #000000;
+}
+
+
+.container {
+    max-width: 1440px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.heading {
+    font-family: "Montserrat";
+    font-size: 55px;
+}
+
+.header {
+    margin-top: 20px;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.header-left {
+    display: flex;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 30px;
+}
+
+.nav-list a {
+    font-family: "Open Sans";
+    color: black;
+}
+
+/* .nav-list a:nth-child(1):hover{
+    color: #d30000;
+} */
+
+.social {
+    display: flex;
+    column-gap: 25px;
+}
+
+.Phone a {
+    color: black;
+    font-family: "Open Sans";
+}
+
+.Record {
+    font-family: "Open Sans";
+    font-size: 20px;
+    width: 168px;
+    border-radius: 30px;
+    height: 45px;
+    background-color: #D4A59A;
+    color: #000000;
+    border: 2px solid black;
+}
+
+.Enter {
+    font-family: "Open Sans";
+    font-size: 20px;
+    width: 138px;
+    border-radius: 30px;
+    height: 45px;
+    background-color: #D4A59A;
+    color: #000000;
+    border: 2px solid black;
+}
+
+
+.modal {
+    display: flex;
+    justify-content:  space-around;
+    align-items: center;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+.lightbox-content{
+    max-width: 50%;
+}
+.form-box {
+    /* font-family: 'Open Sans'; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #000000;
+}
+
+.form-box form {
+    /* font-family: 'Open Sans'; */
+}
+
+.form-title {
+    font-family: 'Open Sans';
+    text-align: center;
+    font-size: 20px;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+.close-button {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.styled-form .form-group {
+    margin-bottom: 10px;
+}
+
+.styled-form .form-label {
+    font-family: 'Open Sans';
+    display: block;
+    margin-bottom: 5px;
+}
+
+.styled-form .form-input,
+.styled-form .form-select,
+.styled-form .form-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.styled-form .form-submit {
+    font-family: 'Open Sans';
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    padding: 14px 20px;
+    margin: 20px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+.styled-form .form-submit:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px;
+    height: 400px;
+    background-color: white;
+    position: fixed;
+    z-index: 150;
+}
+
+
+
+.reg_auth_forms {
+    font-family: "Open Sans";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 350px;
+    background-color: #D4A59A;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.reg_auth_label {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.reg_auth_input {
+    width: 250px;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 2px solid whitesmoke;
+    background-color: #ffffff;
+}
+
+.reg_auth_button {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 200px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: black;
+    margin: 10px 0 10px 0;
+}
+
+.reg_auth_button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.reg_auth_button:active {
+    transform: scale(0.96);
+}
+
+.header-lower {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.header-heading {
+    font-family: "Montserrat";
+    font-size: 50px
+}
+
+.heading-text {
+    font-family: "Open Sans";
+    font-size: 20px;
+}
+
+.header-img {
+    display: flex;
+}
+
+
+
+.header-picture {
+    position: relative;
+    bottom: 75px;
+    width: 80%;
+    left: 150px;
+}
+
+.advantages {
+    padding: 30px 0;
+}
+
+.advantages-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages-column h2 {
+    font-family: "Montserrat";
+    font-size: 48px;
+    margin: 0 0 60px 35px;
+}
+
+.advantages-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 50px;
+}
+
+.advantages-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+    max-width: 278px;
+}
+
+.advantages-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+}
+
+.advantages-card h3 {
+    font-family: "Montserrat";
+    font-size: 24px;
+    text-align: center;
+}
+
+.advantages-card p {
+    font-family: "Open Sans";
+    text-align: center;
+}
+
+.direction {
+    padding: 30px 0;
+}
+
+.direction-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.direction-column h1 {
+    font-family: "Montserrat";
+    font-size: 55px;
+}
+
+.direction-pagination {
+    display: flex;
+    padding: 50px 0;
+    column-gap: 30px;
+}
+
+.direction-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 40px;
+    padding-top: 100px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    row-gap: 30px;
+    width: 470px;
+    height: 780px;
+    background-color: #6B4226;
+    border-radius: 30px;
+    padding: 10px;
+
+}
+
+.card img {
+    width: 430px;
+    height: 322.5px;
+    border-radius: 30px;
+}
+
+.card h3 {
+    font-family: "Montserrat";
+    font-size: 30px;
+    color: azure;
+    text-align: center;
+}
+
+.card p {
+    font-family: "Open Sans";
+    font-size: 25px;
+    color: azure;
+}
+
+.card li {
+    font-family: "Open Sans";
+    color: azure;
+}
+
+.Record2 {
+    font-family: "Open Sans";
+    font-size: 20px;
+    width: 168px;
+    border-radius: 30px;
+    height: 45px;
+    background-color: #D4A59A;
+    color: #000000;
+    border: 2px solid black;
+}
+
+.Master-Class {
+    padding: 30px 0;
+}
+
+.Master-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Master-column h1 {
+    font-family: "Montserrat";
+    font-size: 55px;
+}
+
+.Master-Slider {
+    display: flex;
+    padding-top: 55px;
+}
+
+.Slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 360px;
+    height: 596px;
+    background-color: #6B4226;
+    border-radius: 30px;
+}
+
+
+.slider-card img {
+    /* width: 318px; */
+    width: 320px;
+    height: 310px;
+    border-radius: 20px;
+}
+
+.slider-card h3 {
+    font-size: 25px;
+    font-family: "Montserrat";
+    color: #FFFFFF;
+}
+
+.slider-card p {
+    font-family: "Open Sans";
+    font-size: 18px;
+}
+
+.slider-pagination {
+    display: flex;
+    column-gap: 12px;
+    padding-top: 10px;
+}
+
+.button-active {
+    background-color: red;
+}
+
+.slider-button {
+    width: 50px;
+}
+
+.slider-card.dimmed {
+    transform: scale(0.8);
+    /* Уменьшает размер карточки */
+    opacity: 0.5;
+    /* Делает карточку полупрозрачной, создавая эффект затемнения */
+}
+
+
+.slider-card {
+    transition: transform 1s ease, opacity 1s ease;
+    /* Увеличиваем длительность анимации до 1 секунды для более плавного эффекта */
+}
+
+
+.slider-card li {
+    color: #FFFFFF;
+    font-family: "Open Sans";
+}
+
+.slider-card p {
+    color: #FFFFFF;
+}
+
+.hidden {
+    display: none;
+}
+
+
+.Photo {
+    padding: 30px 0;
+}
+
+.Photo-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Photo-column h1 {
+    font-family: "Montserrat";
+    font-size: 55px;
+}
+
+.Photo-pagination {
+    display: flex;
+    padding: 50px 0;
+    column-gap: 30px;
+}
+
+.Photo-pagination button {
+    font-family: "Open Sans";
+}
+
+.Photo-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.image-button img{
+    width: 550px;
+    max-height: 743px;
+    border-radius: 30px;
+}
+.About-us {
+    padding: 50px 0;
+}
+
+
+.about-author {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px 0;
+}
+
+.author-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 465px;
+}
+
+.about-aut {
+    padding-top: 25px;
+}
+
+.author-info h1 {
+    font-family: "Montserrat";
+    font-size: 55px;
+}
+
+.author-info p {
+    font-family: "Open Sans";
+    font-size: 20px;
+}
+
+.author-info li {
+    font-family: "Open Sans";
+    font-size: 15px;
+    list-style: disc;
+}
+
+
+.author-photo img {
+    width: 450px;
+    height: 500px;
+    border-radius: 20px;
+}
+
+
+.about-teachers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 60px;
+    padding: 50px 0;
+}
+
+.about-teachers h1 {
+    font-family: "Montserrat";
+    font-size: 55px;
+}
+
+.teachers-cards {
+    display: flex;
+    column-gap: 60px;
+}
+
+.teachers-card {
+    display: flex;
+    justify-content: space-evenly;
+    width: 530px;
+    height: 267px;
+    background-color: #6B4226;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.teachers-card h3 {
+    font-size: 20px;
+    font-family: "Montserrat";
+}
+
+.keed {
+    display: flex;
+    column-gap: 20px;
+    padding: 20px;
+    color: #FFFFFF;
+}
+
+.p-b {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.p-b img {
+    height: 165px;
+    border-radius: 30px;
+}
+
+.con span {
+    font-family: "Open Sans";
+    font-size: 17px;
+}
+
+.View {
+    font-family: "Open Sans";
+    display: flex;
+    align-items: center;
+    background-color: #D4A59A;
+    color: #000000;
+    border: 2px solid black;
+
+    justify-content: center;
+    width: 138px;
+    border-radius: 30px;
+    height: 42px;
+}
+
+.con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 10px;
+}
+
+
+.Rewiews-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+    padding: 50px 0;
+}
+
+.Rewiews-container h1 {
+    font-family: "Montserrat";
+    font-size: 55px;
+}
+
+.review {
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 600px;
+}
+
+
+.reviews-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.username {
+    font-family: "Montserrat";
+    font-size: 20px;
+    font-weight: bold;
+    color: #000;
+}
+
+.review-text {
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: #000;
+}
+
+.delete-review {
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+.Gift-sertificfates {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.sertificfate-container {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 25px;
+    width: 925px;
+    height: 267px;
+    background-color: #fc7100;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.sertificfate-container img {
+    width: 350px;
+    padding: 10px;
+    border-radius: 30px;
+    align-self: center;
+}
+
+.sertificfate-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.sertificfate-info h3 {
+    font-family: "Montserrat";
+    font-size: 45px;
+}
+
+.sertificfate-info p {
+    font-family: "Open Sans";
+    font-size: 20px;
+    max-width: 566px;
+}
+
+.sertificfate-button {
+    font-family: "Open Sans";
+    width: 300px;
+    height: 46px;
+    background-color: #D4A59A;
+    color: #000000;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.FAQ {
+    padding: 50px 0;
+}
+
+.FAQ-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.FAQ-container h1 {
+    font-family: "Montserrat";
+    font-size: 55px;
+    text-align: center;
+}
+
+.QAs {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.QA {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+}
+
+.Question {
+    font-family: "Open Sans";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    color: #000;
+}
+
+.Question .icon {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.Answer {
+    font-family: "Open Sans";
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+    font-size: 16px;
+    color: #000;
+}
+
+.Answer.show {
+    max-height: 100px;
+    padding: 10px 0;
+}
+
+.icon {
+    cursor: pointer;
+    float: right;
+}
+
+.Contacts {
+    padding: 50px 0;
+}
+
+.Contacts-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Contacts-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 580px;
+    height: 400px;
+    background-color: #ffd18d;
+    border-radius: 30px;
+}
+
+
+.info-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 0 20px;
+}
+
+.Contacts-info h1 {
+    font-family: "Montserrat";
+    font-size: 55px;
+    text-align: center;
+}
+
+.Contacts-info img {
+    width: 40px;
+    height: 40px;
+}
+
+.Contacts-info a {
+    font-family: "Open Sans";
+    font-size: 18px;
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+}
+
+.Contacts-social {
+    display: flex;
+    column-gap: 20px;
+}
+
+.Howtoget {
+    font-family: "Open Sans";
+    width: 165px;
+    height: 50px;
+    background-color: #D4A59A;
+    color: #000000;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+.Contacts-map iframe {
+    border-radius: 30px;
+}
+
+
+.footer {
+    background-color: #be9980;
+}
+
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    height: 300px;
+    padding-top: 30px;
+}
+
+.footer-block-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-block-one h3 {
+    font-size: 22px;
+    font-family: "Montserrat";
+}
+
+.footer-block-one p {
+    font-family: "Open Sans";
+}
+
+.footer-block-two {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer-block-two h3 {
+    font-family: "Montserrat";
+    text-align: center;
+    font-size: 30px;
+}
+
+.footer-social {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+}
+
+.footer-social img {
+    width: 50px;
+    height: 50px;
+}
+
+.footer-block-three {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+
+.footer-block-three a {
+    color: black;
+    font-family: "Open Sans";
+}
+
+.footer-block-four {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    max-width: 200px;
+}
+
+
+.CallUs {
+    font-family: "Open Sans";
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center;
+}
+
+
+.footer-block-four a {
+    font-size: 18px;
+    color: black;
+    font-family: "Open Sans";
+}

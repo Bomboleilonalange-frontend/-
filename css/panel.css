@@ -1,0 +1,5 @@
+.users_list {
+    max-width: 20%;
+    height: 30vh;
+    overflow: auto;
+}
